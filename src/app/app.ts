@@ -1,12 +1,17 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { WhatsappBtnComponent } from './components/whatsapp-btn/whatsapp-btn';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  standalone: true,
+  imports: [RouterOutlet, WhatsappBtnComponent],
+  template: `
+    <router-outlet />
+    <app-whatsapp-btn />
+  `,
+  styles: []
 })
-export class App {
-  protected readonly title = signal('sove-web');
+export class AppComponent {
+  title = 'sove-web';
 }

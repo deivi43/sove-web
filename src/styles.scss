@@ -1,1 +1,178 @@
-/* You can add global styles to this file, and also import other style files */
+// ===== IMPORTS =====
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+// ===== VARIABLES =====
+:root {
+  --verde-oscuro: #1a3a2a;
+  --verde-medio: #2d6a4f;
+  --verde-claro: #52b788;
+  --azul-oscuro: #1a2744;
+  --azul-medio: #1e3a6e;
+  --amarillo: #f4c430;
+  --blanco: #ffffff;
+  --gris-claro: #f8f9fa;
+  --gris-medio: #e9ecef;
+  --texto-oscuro: #1a1a2e;
+  --texto-medio: #444444;
+  --sombra: 0 8px 32px rgba(0,0,0,0.12);
+  --sombra-hover: 0 16px 48px rgba(0,0,0,0.2);
+  --radio: 12px;
+  --transicion: all 0.3s ease;
+}
+
+// ===== RESET =====
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--texto-oscuro);
+  overflow-x: hidden;
+  background: var(--blanco);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== UTILIDADES =====
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-label {
+  font-family: 'Montserrat', monospace;
+  font-size: 0.8rem;
+  color: var(--verde-claro);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--texto-oscuro);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.section-sub {
+  color: var(--texto-medio);
+  font-size: 1rem;
+  max-width: 540px;
+  margin-bottom: 56px;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: var(--verde-medio);
+  color: var(--blanco);
+  border: none;
+  border-radius: var(--radio);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transicion);
+  box-shadow: 4px 4px 0 var(--verde-oscuro);
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--verde-oscuro);
+    background: var(--verde-claro);
+  }
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: transparent;
+  color: var(--verde-medio);
+  border: 2px solid var(--verde-medio);
+  border-radius: var(--radio);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transicion);
+
+  &:hover {
+    background: var(--verde-medio);
+    color: var(--blanco);
+  }
+}
+
+.btn-danger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: var(--radio);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transicion);
+
+  &:hover { background: #b02a37; }
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  transition: var(--transicion);
+
+  &:hover {
+    box-shadow: var(--sombra-hover);
+    transform: translateY(-4px);
+  }
+}
+
+// ===== SCROLLBAR =====
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--gris-medio); }
+::-webkit-scrollbar-thumb { background: var(--verde-medio); border-radius: 99px; }
+
+// ===== ANIMACIONES =====
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
