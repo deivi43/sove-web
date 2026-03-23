@@ -1,3 +1,86 @@
+<img width="1914" height="908" alt="image" src="https://github.com/user-attachments/assets/c9488e14-6580-4b4a-b6de-1bea5b8b8bef" />
+<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/65e3c750-c93a-415d-831e-ea9cdff6e232" />
+
+# 🌿 SOVE Control Ambiental
+
+Sitio web profesional para SOVE Control Ambiental, empresa especializada en fumigación, control de plagas, desinfección y servicios ambientales en Bogotá, Colombia.
+
+## 🌐 Ver sitio en producción
+[sove-web.vercel.app](https://sove-web.vercel.app)
+
+## 🖼️ Preview
+
+### Inicio
+[arrastra tu captura aquí]
+
+## 🛠️ Tech Stack
+- Angular 21
+- Firebase (Firestore, Storage, Auth)
+- SCSS
+- Vercel
+
+## ✅ Funcionalidades
+- Sección de servicios dinámica
+- Galería de trabajos
+- Formulario de contacto vía WhatsApp
+- Panel administrativo con login
+- Responsive design
+
+
+# 🌿 SOVE Control Ambiental
+
+Professional website for SOVE Control Ambiental, a company specialised in fumigation, pest control, disinfection and environmental services in Bogotá, Colombia.
+
+## 🌐 Live site
+[sove-web.vercel.app](https://sove-web.vercel.app)
+
+## 🖼️ Preview
+
+### Home
+[drag your screenshot here]
+
+## 🛠️ Tech Stack
+- Angular 21
+- Firebase (Firestore, Storage, Auth)
+- SCSS
+- Vercel
+
+## ✅ Features
+- Dynamic services section managed from admin panel
+- Works gallery with category filters
+- Contact form via WhatsApp
+- Secure admin panel with email/password login
+- Add, edit and delete services from the admin panel
+- Upload and manage gallery photos
+- Fully responsive design (mobile, tablet, desktop)
+
+## 🔐 Admin Panel
+Access the admin panel at `/login` with your credentials to manage services and gallery content.
+
+## 📦 Installation
+```bash
+# Clone the repository
+git clone https://github.com/deivi43/sove-web.git
+
+# Enter the project folder
+cd sove-web
+
+# Install dependencies
+npm install --legacy-peer-deps
+
+# Run development server
+ng serve
+```
+
+Open your browser at `http://localhost:4200`
+
+## 🚀 Deployment
+This project is deployed on **Vercel** with automatic deployments on every push to `main`.
+
+---
+
+Built with ☕ by **Deivi Narváez** · Bogotá, Colombia 🇨🇴
+
 # SoveWeb
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
