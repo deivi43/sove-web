@@ -1,11 +1,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyA4ydaFuBVmmPAVvrjthxscv45f-moMOTg",
-    authDomain: "sove-web-77715.firebaseapp.com",
-    projectId: "sove-web-77715",
-    storageBucket: "sove-web-77715.firebasestorage.app",
-    messagingSenderId: "657780530781",
-    appId: "1:657780530781:web:02d437c6d208c1a509f7b4"
+    apiKey: "AIzaSyD08-g_UCZ02vy5tWubqwyNeULCbogZOWE",
+    authDomain: "sove-web-68155.firebaseapp.com",
+    projectId: "sove-web-68155",
+    storageBucket: "sove-web-68155.firebasestorage.app",
+    messagingSenderId: "45735898212",
+    appId: "1:45735898212:web:8ab92818f558efeb3a0371"
   }
 };
